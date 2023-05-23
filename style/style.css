@@ -1,0 +1,82 @@
+body{
+    background-color: #21B8C4;
+    border-color: aliceblue;
+    
+}
+.rounded{
+    width: 200%;
+    height: 350px;
+    border-radius: 5px;
+    opacity: 75%;
+}
+.img1{
+    width: 50%;
+    height: 50%;
+    border-radius: 5px;
+}
+.toi{
+    border-radius: 10px;
+    height: 100%;
+    color: #21B8C4;
+}
+.cool{
+    color: aliceblue;
+}
+.kakra{
+    color: aliceblue;
+}
+.kkk{
+    margin-left: 10px;
+    height: 60px;
+    border-radius: 9px;
+    color: #21B8C4;
+    font-weight: bold;
+}
+.k{
+    color: blue;
+  }
+select{
+    width: 800px;
+}
+input{
+    width: 100%;
+    border-radius: 7px;
+    border: white;
+     
+}
+.img4{
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.form{
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+.enre{
+    background-color: rgb(49, 110, 110);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+.kok{
+    color: #21B8C4;
+    font-weight: bold;
+    font-size: 35px;
+    margin-right: 20px;
+
+}
+.dicko{
+    background-color: white;
+    box-shadow: #070707;
+}
+.abc{
+    text-decoration: none;
+}
+.texto{
+    color: white;
+    text-decoration: none;
+}
+

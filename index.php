@@ -4,47 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style\bootstrap\css\bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
     <title>Apprenants</title>
-    <style>
-        body{
-    box-shadow: 1px 6px 17px grey;
-    margin-right: 35%;
-    margin-left: 35%;
-    margin-top: 20%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    
-    }
-    .btn{
-    width: 100%;
-    }
-    </style>
 </head>
 <body>
-    <form method="POST" action="inscription.php">
-    <table >
-        <tr>
-            <td>Nom</td>
-            <td><input type="text" name="nom" placeholder="votre nom..."></td>
-        </tr>
-        <tr>
-            <td>Prenom</td>
-            <td><input type="text" name="pre" placeholder="votre prenom..."></td>
-        </tr>
-        <tr>
-            <td>Email</td>
-            <td><input type="email" name="eml" placeholder="votre e-mail..."></td>
-        </tr>
-        <tr>
-            <td>Mot de passe</td>
-            <td><input type="password" name="pwd" placeholder="votre mot de passe..."></td>
-        </tr>
-            <td></td>
-            <td><input class="btn" type="submit" name="forminscription" value="Save"></td>
-    </table>
-    </form>
-
+  <header>
+<div class="container mt-5">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+      <img class="img1" src="images\téléchargement.jpeg">
+      </div>
+      <div class="col">
+        <h1>Université Joseph KI-ZERBO</h1>
+      </div>
+      <div class="col">
+        <h4>Burkina Faso</h4>
+        <h4>Unité-Progrès-Justice</h4>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+<div class="container">
+  <div class="row">
+    <img class="rounded" src="images\pexels-photo-289737.webp">
+  </div>
+</div>
+<div class="container mt-2">
+  <div class="row">
+    <div class="col bg-white toi">
+      <h2>L'UFR SDS est l'une des plus <br> grandes facultés de cette <br> Université situé en Afrique de l'Ouest . Elle forme des étudiants dans divers domaines <br>tels que la psychologie, la <br>sociologie et l'anthropologie</h2>
+    </div>
+    <div class="col">
+      <h1 class="cool">Principal objectif</h1>
+      <h3>Gestion des étudians de l'UFR SDS</h3>
+    <p><button type="button" class="kkk" class="btn btn-light">Paramètres de <br>confidentialités</button></p><br>
+    <p><button type="button" class="kkk" class="btn btn-light"> <a class="abc" href="suite.php">Inscription</a> </button><button type="button" class="kkk" class="btn btn-light"> <a class="abc"  href="ensuite.php">Cliquer pour lister</a></button></p>
+    </div>
+  </div>
+</div>
+<div class="container text-center">
+  <div class="row bg-dark">
+    <p class="kakra">Copyright © Université Joseph KI-ZERBO 2020 - Tous droit réservés. Powered by DSI</p>
+  </div>
+</div>
     <script src="script\script.js"></script>
+    <script src="style\bootstrap\js"></script>
 </body>
 </html>

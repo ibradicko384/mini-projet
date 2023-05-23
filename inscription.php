@@ -1,11 +1,13 @@
 <?php
-$conn=mysqli_connect('localhost','root','','formulaire') or die(mysqli_error());
+$conn=mysqli_connect('localhost','root','','projet') or die(mysqli_error());
 $NOM=$_POST['nom'];
 $PRE=$_POST['pre'];
+$DATE=$_POST['date'];
 $EML=$_POST['eml'];
 $PWD=$_POST['pwd'];
+$PWD=$_POST['pwd'];
 
-$req="INSERT INTO apprenants (nom,prenom,email,password) values ('$NOM','$PRE','$EML','$PWD')";
+$req="INSERT INTO apprenants (nom,prenom,date_de_naissance,genre,date_admission,personne_prevenir) values ('$NOM','$PRE','$DATE')";
 $res=mysqli_query($conn,$req);
 ?>
 
@@ -29,7 +31,9 @@ $res=mysqli_query($conn,$req);
     width: 100%;
     }
     .div{
-        text-align: center;
+        text-align: left;
+        margin-left: 20%;
+        
     }
     </style>
 </head>
@@ -39,20 +43,24 @@ $res=mysqli_query($conn,$req);
       <h3>L'apprenant simplon</h3>
       <table >
         <tr>
-            <td>Nom</td>
+            <td>Nom :</td>
             <td><?php echo ($NOM) ?></td>
         </tr>
         <tr>
-            <td>Prenom</td>
+            <td>Prenom :</td>
             <td><?php echo ($PRE) ?></td>
         </tr>
         <tr>
-            <td>Email</td>
-            <td><?php echo ($EML) ?></td>
+            <td>Date de naissance :</td>
+            <td><?php echo ($DATE) ?></td>
         </tr>
+        <!-- <tr>
+            <td>Email :</td>
+            <td><?php echo ($EML) ?></td>
+        </tr> -->
     </table>
-    <p>a été retenu avec succès</p>
-    <p><a href="index.php">Ajouter un nouveau apprenant</a></p>
+    <p>a été enregistré avec succès</p>
+    <p><a href="index.php">Ajouter</a></p>
     </div>
     </form>
 

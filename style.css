@@ -1,0 +1,46 @@
+body{
+    background-color: #21B8C4;
+    border-color: aliceblue;
+    
+}
+.rounded{
+    width: 200%;
+    height: 350px;
+    border-radius: 5px;
+    opacity: 75%;
+}
+.img1{
+    width: 50%;
+    height: 50%;
+    border-radius: 5px;
+}
+.toi{
+    border-radius: 10px;
+    height: 100%;
+    color: #21B8C4;
+}
+.cool{
+    color: aliceblue;
+}
+.kakra{
+    color: aliceblue;
+}
+.kkk{
+    margin-left: 10px;
+    height: 60px;
+    border-radius: 9px;
+    color: #21B8C4;
+    font-weight: bold;
+}
+.slider .quote {
+    font-size: 40px;
+    font-style: italic;
+  }
+  
+  .slider .source {
+    font-size: 20px;
+    text-align: right;
+  }
+.k{
+    color: blue;
+  }
