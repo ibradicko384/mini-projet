@@ -51,6 +51,11 @@
 
         </div>
     </div>
+    <div class="container text-center">
+  <div class="row bg-dark">
+    <p class="kakra">Copyright © Université Joseph KI-ZERBO 2020 - Tous droit réservés. Powered by DSI</p>
+  </div>
+</div>
    
     <script src="script\script.js"></script>
     <script src="style\bootstrap\js"></script>

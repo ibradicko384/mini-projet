@@ -29,14 +29,16 @@
 				</tr>
                 <?php
                 // Vérification de la connexion
+
                 require'connexion.php'; 
+
                 // Récupération des données des étudiants
-                $requete = "SELECT * FROM apprenants";
-                $query = mysqli_query($conn, $requete);
+                $requete = "SELECT nom, prenom, date_de_naissance, genre, date_admission, personne_prevenir FROM apprenants";
+                $result = $conn->query($requete);
 
                 // Affichage des données dans un tableau HTML
-
-                    while($row = mysqli_fetch_assoc($query)) {
+                if($result->rowcount()>0){
+                    while($row = $result->fetch(PDO::FETCH_ASSOC)) {
                     echo "<tr>";
                         echo "<td>" . $row["nom"] . "</td>";
                         echo "<td>" . $row["prenom"]  . "</td>";
@@ -46,9 +48,18 @@
                         echo "<td>" . $row["personne_prevenir"] . "</td>";
                     echo "</tr>";
                     }
+                } else{
+                    echo "aucun donnée trouvée";
+                }
+                $conn=NULL;
              ?>
       </table>
-   <a href="index.php" >Retour à l'accueil</a>
+      <p><button type="button" class="kkk" class="btn btn-light"> <a class="abc"  href="index.php">Retour à l'accueil</a></button></p>
+</div>
+<div class="container text-center">
+  <div class="row bg-dark">
+    <p class="kakra">Copyright © Université Joseph KI-ZERBO 2020 - Tous droit réservés. Powered by DSI</p>
+  </div>
 </div>
 	<script src="../style/bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

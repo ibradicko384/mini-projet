@@ -13,13 +13,13 @@
 <div class="container mt-5">
   <div class="container text-center">
     <div class="row">
-      <div class="col">
+      <div class="col-4">
       <img class="img1" src="images\téléchargement.jpeg">
       </div>
-      <div class="col">
+      <div class="col-4">
         <h1>Université Joseph KI-ZERBO</h1>
       </div>
-      <div class="col">
+      <div class="col-4">
         <h4>Burkina Faso</h4>
         <h4>Unité-Progrès-Justice</h4>
       </div>
